@@ -11,6 +11,11 @@ export default {
         //
         // Attributes:
         // h('div', { class: 'bar', innerHTML: 'hello' })
+        //
+        // START HERE
+        // Big question:
+        // How to add/replace classes on the slots.default...
+        // ... a recursive h()?
         return () =>
             h(
                 "div",
