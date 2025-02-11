@@ -11,6 +11,12 @@ export default {
         //
         // Attributes:
         // h('div', { class: 'bar', innerHTML: 'hello' })
-        return () => h("div", { class: "bg-red-500" }, props, slots.default())
+        return () =>
+            h(
+                "div",
+                { class: "border rounded-lg flex divide-x" },
+                props,
+                slots.default()
+            )
     },
 }
