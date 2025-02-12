@@ -22,15 +22,13 @@ export default {
                 { class: "border rounded-lg flex divide-x" },
                 props,
                 slots.default().map(component => {
-                    console.log(component)
-
-                    console.log(component.data)
-
-                    component.data = {
-                        class: "foobar",
-                    }
+                    // component.props.class = null
+                    // component.inhreitAttrs = false
                     return h(component, {
-                        class: "px-4 py-2 hover:bg-gray-100",
+                        class: {
+                            "rounded-lg": false,
+                            border: false,
+                        },
                     })
                 })
             )
