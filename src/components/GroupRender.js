@@ -12,12 +12,10 @@ export default {
                 { class: "border rounded-lg flex divide-x" },
                 props,
                 slots.default()?.map(component =>
-                    h(
-                        cloneVNode(component, {
-                            onVnodeMounted: tweakClass,
-                            onVnodeUpdated: tweakClass,
-                        })
-                    )
+                    cloneVNode(component, {
+                        onVnodeMounted: tweakClass,
+                        onVnodeUpdated: tweakClass,
+                    })
                 )
             )
     },
