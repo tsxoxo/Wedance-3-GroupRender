@@ -9,7 +9,6 @@ test("Slot-children are being rendered and class attribute is being correctly mo
             default: [Tbutton, Tbutton],
         },
     })
-    console.log(wrapper.findAll("button")[0].attributes())
     // 2 <button> elements are being rendered
     expect(wrapper.findAll("button").length).toBe(2)
     // They have the classes specified in the criteria
